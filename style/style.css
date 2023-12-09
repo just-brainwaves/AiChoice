@@ -1,0 +1,132 @@
+/* @font-face {
+    font-family: fabulist;
+    src:url("/fonts/hyperion/HyperionLight.otf");
+} */
+
+html, body {
+    background-color: black;
+    font-family: Agency FB;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+@keyframes leftToRight {
+    from{
+        transform: translateX(-200%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes upToDown {
+    from {
+        transform: translateY(-1000%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes rightToLeft {
+    from {
+        translate: transformX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.main {
+    background-image: linear-gradient(#000000, #323232);
+    width: 90%;
+    height: 100%;
+    float: right;
+    padding: 0;
+    margin: 0;
+}
+
+.leftPanel {
+    background-color: #abaa8b;
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+.anim {
+    transform: translateX(-200%);
+    animation-name: leftToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.topPanel {
+    background-color: black;
+    width: 90%;
+    height: 10%;
+    padding-top:10px;
+    float: right;
+    overflow: hidden;
+    animation: upToDown;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    transform: translateY(-100%);
+    animation-fill-mode: forwards;
+    
+}
+
+.topPanel a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color .3s ease-in-out;
+}
+
+.topPanel a:hover {
+    box-shadow: insert 100px 0 0 0 white;
+    background-color: white;
+    color: black;
+}
+
+.mainImage {
+    width: 30%;
+    height: auto;
+    float: right;
+    padding-top: 4rem;
+    padding-right: 8rem;
+    animation: rightToLeft;
+    animation-duration: 1.4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    transform: translateX(150%);
+}
+.reg {
+    border: 1px solid;
+    border-color: white;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding: 7px 90px;
+    border-radius: 20px;
+    margin-left: 4rem;
+    margin-top: 7rem;
+    transition: .3s ease-in-out;
+}
+
+.reg:hover {
+    background-color: white;
+    color: black;
+    border-color: beige;
+}
+#my {
+    zoom:100%;
+}
